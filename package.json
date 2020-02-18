@@ -1,14 +1,14 @@
 {
   "name": "make-observable",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "KeyValue observable creator.",
+  "main": "./src/MakeKeyValueObservable.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "nodemon"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Joey Guerra <github@joeyguerra.com>",
+  "license": "MIT",
   "devDependencies": {
     "nodemon": "^2.0.2"
   }
