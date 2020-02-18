@@ -1,8 +1,8 @@
 {
-  "name": "make-observable",
+  "name": "@joeyguerra/make-observable",
   "version": "1.0.0",
   "description": "KeyValue observable creator.",
-  "main": "./src/MakeKeyValueObservable.mjs",
+  "main": "index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "nodemon"
