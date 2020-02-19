@@ -1,5 +1,5 @@
 import tdding from "../tdding.mjs"
-import MakeKeyValueObservable from "../src/MakeKeyValueObservable.mjs"
+import MakeKeyValueObservable from "../MakeKeyValueObservable.mjs"
 tdding.push("Should call the observer as a function", t => {
     const observable = MakeKeyValueObservable({
         name: "joey g",
@@ -25,4 +25,8 @@ tdding.push("Observer can be an object that responds to `update`", t => {
     }
     observable.observe("age", observer)
     observable.age = 24
+})
+
+tdding.push("Add a bunch of observers", t => {
+
 })
