@@ -1,2 +1,2 @@
-import MakeKeyValueObservable from "./src/MakeKeyValueObservable.mjs"
+import MakeKeyValueObservable from "./MakeKeyValueObservable.mjs"
 export default MakeKeyValueObservable
