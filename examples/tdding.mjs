@@ -47,9 +47,11 @@ class Tdd extends Array {
         super.push({description, fn})
     }
     async run(){
+        console.time("tdding")
         for await (let example of this){
             await example.fn(this)
         }
+        console.timeEnd("tdding")
     }
 }
 

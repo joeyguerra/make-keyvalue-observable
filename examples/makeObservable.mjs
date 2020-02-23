@@ -1,4 +1,4 @@
-import tdding from "../tdding.mjs"
+import tdding from "./tdding.mjs"
 import MakeKeyValueObservable from "../MakeKeyValueObservable.mjs"
 tdding.push("Should call the observer as a function", t => {
     const observable = MakeKeyValueObservable({
@@ -28,5 +28,14 @@ tdding.push("Observer can be an object that responds to `update`", t => {
 })
 
 tdding.push("Add a bunch of observers", t => {
-
+    const observable  = MakeKeyValueObservable({
+        name: "Joey g",
+        age: 23
+    })
+    ;[...Array(10000).keys()].forEach(i=>{
+        observable.observe("age", (key, old, value)=>{
+        })
+    })
+    observable.age = 25
+    t.ok(true, "Doesn't crash")
 })
